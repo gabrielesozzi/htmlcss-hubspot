@@ -1,0 +1,128 @@
+/* Layout */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+[class^="row"] {
+  width: 80%;
+  margin: auto;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class$="-50"] {
+  width: calc(100%/2)
+}
+
+/* Header */
+
+.nav_top {
+  border-bottom: 1px solid #034fad;
+  padding: 10px 0;
+}
+
+nav{
+  line-height: 50px;
+}
+
+
+.left_side span:after {
+  content: "\22C1";
+}
+
+.left_side span:first-of-type {
+  border-right: 2px solid black;
+  padding-left: 3px;
+  padding-right: 10px;
+}
+
+.left_side{
+  display: inline-block;
+  color: #034fad;
+}
+
+.right_side {
+  display: inline-block;
+  float: right;
+}
+
+#search {
+  color: #53C1D3;
+}
+
+#logo {
+  vertical-align: middle;
+}
+
+span a, ul li a {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.right_side ul li  {
+  display:inline-block;
+  padding-left: 30px;
+  color: #034fad;
+  vertical-align: middle;
+}
+
+.jumbotron {
+  background-image: url("../img/jumbotron.png");
+  height: 575px;
+  background-size: cover;
+}
+
+.jumbotron .jumbo_text {
+  margin-top: 10%;
+}
+
+.jumbo_text * {
+  padding-bottom: 30px;
+}
+
+.jumbo_text >h1 {
+  font-size: 60px;
+}
+
+.jumbo_text div a {
+  text-decoration: none;
+}
+
+#separator {
+  background: linear-gradient(
+45deg
+,#b9eff7,#96eaf7);
+  height: 80px;
+  border-top: 3px solid #33475B;
+  border-bottom:  3px solid #33475B;
+}
+
+
+/* Utility */
+
+.bg_lightgrey {
+  background-color: #F4F9FD;
+}
+
+/* Buttons */
+
+#btn_login {
+  border: 2px solid #FF7A59;
+  color: #FF7A59;
+  padding: 10px 10px;
+  border-radius: 10%;
+}
+
+#btn_get_hubspot {
+  border: 2px solid #FF7A59;
+  color: #FFFFFF;
+  padding: 10px 10px;
+  border-radius: 10%;
+  background-color: #FF7A59;
+}
